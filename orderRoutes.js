@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Order = require("./Order");
+const Order = require("./order");
 const twilio = require("twilio");
 
 const client = twilio(
