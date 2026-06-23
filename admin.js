@@ -104,7 +104,7 @@ async function loadOrders() {
 async function updateStatus(id,status){
 
     await fetch(
-        `https://jewelery-backend.onrender.com/api/orders${id}`,
+        `https://jewelery-backend.onrender.com/api/orders/${id}`,
         {
             method:"PUT",
             headers:{
@@ -122,7 +122,7 @@ async function deleteOrder(id){
     if(!confirm("Delete this order?")) return;
 
     await fetch(
-        `https://jewelery-backend.onrender.com/api/orders${id}`,
+        `https://jewelery-backend.onrender.com/api/orders/${id}`,
         {
             method:"DELETE"
         }
